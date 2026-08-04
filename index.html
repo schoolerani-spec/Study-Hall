@@ -433,15 +433,15 @@
             setDoc 
         } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-        // Firebase Configuration (Configured for student-workplace-krm)
+        // Firebase Configuration (Updated for student-hub-krm)
         const firebaseConfig = {
-            apiKey: "AIzaSyDvz_spPioU51W_CinXQchcTZEWUNBxuho",
-            authDomain: "student-workplace-krm.firebaseapp.com",
-            projectId: "student-workplace-krm",
-            storageBucket: "student-workplace-krm.firebasestorage.app",
-            messagingSenderId: "69085651675",
-            appId: "1:69085651675:web:da40fe62674762b59fa2fe",
-            measurementId: "G-HTMZ0T0P8T"
+            apiKey: "AIzaSyA09zx6IQpfHWM0SsZ1yqjTpFJThb3IMV8",
+            authDomain: "student-hub-krm.firebaseapp.com",
+            projectId: "student-hub-krm",
+            storageBucket: "student-hub-krm.firebasestorage.app",
+            messagingSenderId: "828023148351",
+            appId: "1:828023148351:web:9d09526db4e230656a8d8a",
+            measurementId: "G-8PXGYZ6BE"
         };
 
         const app = initializeApp(firebaseConfig);
@@ -457,7 +457,7 @@
                 await signInWithPopup(auth, googleProvider);
             } catch (error) {
                 console.error("Authentication Error:", error);
-                alert("Sign-in failed. Please try again.");
+                alert("Sign-in failed. Make sure you added your site domain to Authorized Domains in Firebase Authentication Settings!");
             }
         };
 
@@ -764,4 +764,4 @@
         }
     </script>
 </body>
-</html>	
+</html>
